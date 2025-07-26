@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Te Amo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="falling-container" id="falling-container"></div>
+
+  <div class="center-text" id="main-teamo">
+    Te Amo
+  </div>
+
+  <div class="notes-section" id="notes-section" style="display: none;">
+    <h2>Cartas y Notas</h2>
+    <div class="notes-container">
+      <div class="note" onclick="openNote('nota1')">Carta 1</div>
+      <div class="note" onclick="openNote('nota2')">Nota 2</div>
+      <div class="note" onclick="openNote('nota3')">Mensaje 3</div>
+    </div>
+  </div>
+
+  <div class="note-popup" id="note-popup" style="display: none;">
+    <div class="popup-content" id="popup-content"></div>
+    <button onclick="closePopup()">Cerrar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
